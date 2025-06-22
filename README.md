@@ -1,12 +1,72 @@
-# React + Vite
+# Relatos de Papel - Ecommerce de Libros
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una propuesta de frontend para un ecommerce de venta de libros, desarrollado con React, Vite y Bootstrap.
 
-Currently, two official plugins are available:
+## Características principales
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Catálogo de libros con vista de detalle.
+- Carrito de compra persistente en contexto global.
+- Proceso de checkout simulado.
+- Redirección automática desde la pantalla de bienvenida.
+- Diseño responsive usando Bootstrap 5.
 
-## Expanding the ESLint configuration
+## Tecnologías utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [React 19](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Bootstrap 5](https://getbootstrap.com/)
+- [React Router DOM](https://reactrouter.com/)
+
+## Estructura del proyecto
+
+```
+├── public/
+├── src/
+│   ├── assets/           # Imágenes y recursos
+│   ├── components/       # Componentes reutilizables (Header, Footer, BookCard, etc.)
+│   ├── context/          # Contexto global (Carrito)
+│   ├── data/             # Datos simulados (libros)
+│   ├── hooks/            # Hooks personalizados
+│   ├── pages/            # Páginas principales (Landing, Catalog, BookDetail, Checkout)
+│   ├── App.jsx           # Componente principal
+│   ├── App.css           # Estilos globales
+│   ├── index.css         # Estilos base
+│   └── main.jsx          # Punto de entrada
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+## Instalación y ejecución
+
+1. Clona el repositorio:
+   ```bash
+   git clone <url-del-repositorio>
+   cd Actividad-1
+   ```
+2. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+3. Inicia el servidor de desarrollo:
+   ```bash
+   npm run dev
+   ```
+4. Abre [http://localhost:5173](http://localhost:5173) en tu navegador.
+
+## Scripts disponibles
+
+- `npm run dev`     - Inicia el servidor de desarrollo con Vite.
+- `npm run build`   - Genera la build de producción.
+- `npm run preview` - Previsualiza la build de producción.
+- `npm run lint`    - Ejecuta ESLint sobre el código fuente.
+
+## Notas
+
+- El proyecto es solo frontend y simula la gestión de libros y carrito en memoria.
+- Puedes personalizar los datos de los libros en `src/data/books.js`.
+
+## Licencia
+
+Este proyecto es solo para fines educativos y de demostración.
+
