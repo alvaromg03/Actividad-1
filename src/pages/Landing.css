@@ -1,0 +1,22 @@
+.landing {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.landing__title {
+    font-size: 2rem;
+}
+
+.landing__text {
+    margin-top: 1rem;
+    color: #666;
+}
+
+.landing--centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
